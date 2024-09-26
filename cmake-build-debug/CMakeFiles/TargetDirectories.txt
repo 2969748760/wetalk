@@ -1,0 +1,5 @@
+D:/QtProjects/wetalk/cmake-build-debug/CMakeFiles/wetalk.dir
+D:/QtProjects/wetalk/cmake-build-debug/CMakeFiles/edit_cache.dir
+D:/QtProjects/wetalk/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+D:/QtProjects/wetalk/cmake-build-debug/CMakeFiles/wetalk_autogen_timestamp_deps.dir
+D:/QtProjects/wetalk/cmake-build-debug/CMakeFiles/wetalk_autogen.dir
