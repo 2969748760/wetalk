@@ -5,3 +5,11 @@ QDialog#LoginDialog, #RegisterDialog {
 #user_label, #pass_label {
     color: black;
 }
+
+#error_tip[state='normal'] {
+    color: forestgreen;
+}
+
+#error_tip[state='error'] {
+    color: red;
+}

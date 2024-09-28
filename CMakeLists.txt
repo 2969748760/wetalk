@@ -12,6 +12,7 @@ find_package(Qt6 COMPONENTS
         Core
         Gui
         Widgets
+        Network
         REQUIRED)
 
 include_directories(
@@ -30,11 +31,17 @@ add_executable(wetalk Sources/main.cpp
         Sources/registerdialog.cpp
         Sources/Headers/registerdialog.h
         Sources/Forms/registerdialog.ui
+        Sources/Headers/global.h
+        Sources/global.cpp
+        Sources/Headers/singleton.h
+        Sources/httpmanager.cpp
+        Sources/Headers/httpmanager.h
 )
 target_link_libraries(wetalk
         Qt::Core
         Qt::Gui
         Qt::Widgets
+        Qt::Network
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)

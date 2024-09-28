@@ -11,7 +11,7 @@
 #define WETALK_REGISTERDIALOG_H
 
 #include <QDialog>
-
+#include "global.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class RegisterDialog; }
@@ -26,7 +26,14 @@ public:
     ~RegisterDialog() override;
 
 private:
+    void showTip(QString str, bool b_ok);
+    void initHttpHandlers();
+    QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
     Ui::RegisterDialog *ui;
+
+private slots:
+    void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
+    void on_get_code_clicked();
 };
 
 

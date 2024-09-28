@@ -1,5 +1,16 @@
 D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdialog.cpp: D:/QtProjects/wetalk/Sources/Headers/registerdialog.h \
   D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QByteArray \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QFlags \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QIODevice \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QList \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QMetaType \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QRegularExpression \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QSharedDataPointer \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QString \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QUrl \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QVariant \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \
@@ -19,6 +30,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qbytearrayalgorithms.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qbytearraylist.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qbytearrayview.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qcalendar.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qchar.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcompare.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcompare_impl.h \
@@ -30,8 +42,10 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcontainerinfo.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcontainertools_impl.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcontiguouscache.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qcryptographichash.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdarwinhelpers.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdatastream.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdebug.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qexceptionhandling.h \
@@ -45,18 +59,21 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qglobalstatic.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qhash.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qhashfunctions.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qiodevice.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qline.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qlist.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qlocale.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qlogging.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmalloc.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmap.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmargins.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmath.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmetacontainer.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qmetaobject.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qmetatype.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qminmax.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qnamespace.h \
@@ -71,6 +88,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qprocessordetection.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qrect.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qrefcount.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qregularexpression.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qscopeguard.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qset.h \
@@ -114,6 +132,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtversionchecks.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtypeinfo.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
@@ -145,9 +164,33 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtGui/qtransform.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtGui/qwindowdefs_win.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/QNetworkAccessManager \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/QNetworkReply \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/QNetworkRequest \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/QSslConfiguration \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qabstractsocket.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qhostaddress.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qhttpheaders.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qnetworkaccessmanager.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qnetworkreply.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qnetworkrequest.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qssl.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qsslcertificate.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qsslconfiguration.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qsslerror.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qsslsocket.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qtcpsocket.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetwork-config.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkexports.h \
+  D:/Qt/6.8.0/mingw_64/include/QtNetwork/qtnetworkglobal.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/QDialog \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QStyle \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/QWidget \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qdialog.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qsizepolicy.h \
+  D:/Qt/6.8.0/mingw_64/include/QtWidgets/qstyle.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgets-config.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsexports.h \
   D:/Qt/6.8.0/mingw_64/include/QtWidgets/qtwidgetsglobal.h \
@@ -259,6 +302,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/string_view.tcc \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/stringfwd.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uniform_int_dist.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_lock.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unique_ptr.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/unordered_map.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/uses_allocator.h \
@@ -299,6 +343,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iomanip \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ios \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iosfwd \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iostream \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/istream \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/iterator \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/limits \
@@ -306,6 +351,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/locale \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/map \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/memory \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/mutex \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/new \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numbers \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/numeric \
@@ -397,4 +443,5 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/time.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
-  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h
+  D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
+  D:/QtProjects/wetalk/Sources/Headers/global.h

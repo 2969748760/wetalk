@@ -17,24 +17,20 @@ MainWindow::MainWindow(QWidget *parent) :
         QMainWindow(parent), ui(new Ui::MainWindow) {
     setWindowIcon(QIcon(":/resources/icons/icon_small.ico"));
     ui->setupUi(this);
-    loginDialog = new LoginDialog();
+    loginDialog = new LoginDialog(this);
     setCentralWidget(loginDialog);
-    loginDialog->show();
+    // loginDialog->show();
     // 创建和注册消息链接
     connect(loginDialog, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
-    registerDialog = new RegisterDialog();
+    registerDialog = new RegisterDialog(this);
+
+    loginDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+    registerDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+    registerDialog->hide();
 }
 
 MainWindow::~MainWindow() {
     delete ui;
-    if (loginDialog) {
-        delete loginDialog;
-        loginDialog = nullptr;
-    }
-    if (registerDialog) {
-        delete registerDialog;
-        registerDialog = nullptr;
-    }
 }
 
 void MainWindow::SlotSwitchReg() {

@@ -32,6 +32,9 @@ public:
     QWidget *page;
     QVBoxLayout *verticalLayout_3;
     QSpacerItem *verticalSpacer;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *error_tip;
     QHBoxLayout *horizontalLayout;
     QLabel *user_label;
     QLineEdit *user_edit;
@@ -59,7 +62,9 @@ public:
     {
         if (RegisterDialog->objectName().isEmpty())
             RegisterDialog->setObjectName("RegisterDialog");
-        RegisterDialog->resize(374, 312);
+        RegisterDialog->resize(300, 500);
+        RegisterDialog->setMinimumSize(QSize(300, 500));
+        RegisterDialog->setMaximumSize(QSize(300, 500));
         verticalLayout_2 = new QVBoxLayout(RegisterDialog);
         verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout = new QVBoxLayout();
@@ -73,6 +78,19 @@ public:
         verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Policy::Minimum, QSizePolicy::Policy::Expanding);
 
         verticalLayout_3->addItem(verticalSpacer);
+
+        widget = new QWidget(page);
+        widget->setObjectName("widget");
+        verticalLayout_4 = new QVBoxLayout(widget);
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        error_tip = new QLabel(widget);
+        error_tip->setObjectName("error_tip");
+        error_tip->setAlignment(Qt::AlignmentFlag::AlignCenter);
+
+        verticalLayout_4->addWidget(error_tip);
+
+
+        verticalLayout_3->addWidget(widget);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
@@ -222,6 +240,7 @@ public:
     void retranslateUi(QDialog *RegisterDialog)
     {
         RegisterDialog->setWindowTitle(QCoreApplication::translate("RegisterDialog", "RegisterDialog", nullptr));
+        error_tip->setText(QCoreApplication::translate("RegisterDialog", "\351\224\231\350\257\257\346\217\220\347\244\272", nullptr));
         user_label->setText(QCoreApplication::translate("RegisterDialog", "\347\224\250\346\210\267\357\274\232", nullptr));
         email_label->setText(QCoreApplication::translate("RegisterDialog", "\351\202\256\347\256\261\357\274\232", nullptr));
         pass_label->setText(QCoreApplication::translate("RegisterDialog", "\345\257\206\347\240\201\357\274\232", nullptr));
