@@ -1,0 +1,14 @@
+# ninja log v6
+12	158	7492156396705780	wetalk_autogen/timestamp	e7af55c5ff058cb8
+12	158	7492156396705780	wetalk_autogen/mocs_compilation.cpp	e7af55c5ff058cb8
+974	5859	7492156247736137	CMakeFiles/wetalk.dir/Sources/global.cpp.obj	74d131c1378bf4db
+3826	4437	7492156434846572	wetalk.exe	c0b206c3ead1a14
+985	1193	7492156247843439	CMakeFiles/wetalk.dir/wetalk_autogen/EWIEGA46WW/qrc_resources.cpp.obj	8d30b4d0a5b4ad1c
+955	6021	7492156247546637	CMakeFiles/wetalk.dir/Sources/main.cpp.obj	ea89ff15cfbbc361
+950	6138	7492156247506744	CMakeFiles/wetalk.dir/wetalk_autogen/mocs_compilation.cpp.obj	7e4f17d6d1116255
+963	5876	7492156247631749	CMakeFiles/wetalk.dir/Sources/logindialog.cpp.obj	5028d87c2500ec0c
+4	599	7496803770449037	build.ninja	257f277b8893aead
+959	6006	7492156247591847	CMakeFiles/wetalk.dir/Sources/mainwindow.cpp.obj	e82b0894d23c9077
+12	75	7491408273903266	wetalk_autogen/EWIEGA46WW/qrc_resources.cpp	7f4ae107c0b70ec4
+159	3826	7492156398163645	CMakeFiles/wetalk.dir/Sources/registerdialog.cpp.obj	15f89a94f3b7c3ba
+979	6062	7492156247793545	CMakeFiles/wetalk.dir/Sources/httpmanager.cpp.obj	86107ef6ff2de5e2

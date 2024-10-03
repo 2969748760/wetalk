@@ -1,7 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>resources/icons/icon_small.ico</file>
-        <file>resources/images/ma.png</file>
-        <file>style/stylesheet.qss</file>
-    </qresource>
-</RCC>
