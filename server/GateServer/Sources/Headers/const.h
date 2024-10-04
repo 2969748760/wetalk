@@ -18,10 +18,19 @@
 #include "Singleton.h"
 #include <functional>
 #include <map>
+#include <unordered_map>
+#include <json/json.h>
+#include <json/value.h>
+#include <json/reader.h>
 
 namespace beast = boost::beast;
 namespace http = beast::http;
 namespace net = boost::asio;
 using tcp = boost::asio::ip::tcp;
 
+enum ErrorCodes {
+    Success = 0,
+    Error_Json = 1001,
+    RPCFailed = 1002,
+};
 #endif //GATESERVER_CONST_H

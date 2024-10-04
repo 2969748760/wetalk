@@ -1,5 +1,5 @@
-D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_httpmanager.cpp: D:/QtProjects/wetalk/Sources/Headers/httpmanager.h \
-  D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
+D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_httpmanager.cpp: D:/QtProjects/wetalk/client/wetalk/Sources/Headers/httpmanager.h \
+  D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QByteArray \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QFlags \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QIODevice \
@@ -450,5 +450,5 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_httpmanager
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  D:/QtProjects/wetalk/Sources/Headers/global.h \
-  D:/QtProjects/wetalk/Sources/Headers/singleton.h
+  D:/QtProjects/wetalk/client/wetalk/Sources/Headers/global.h \
+  D:/QtProjects/wetalk/client/wetalk/Sources/Headers/singleton.h

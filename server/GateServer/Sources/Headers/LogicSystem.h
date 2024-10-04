@@ -30,6 +30,10 @@ public:
 
     void ReGet(std::string, HttpHandler handler);
 
+    void RePost(std::string, HttpHandler handler);
+
+    bool HandlePost(std::string, std::shared_ptr<HttpConnection>);
+
 private:
     LogicSystem();
 

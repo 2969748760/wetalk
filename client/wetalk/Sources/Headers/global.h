@@ -18,8 +18,9 @@
 #include <mutex>
 #include <QByteArray>
 #include <QNetworkReply>
-
 #include "QStyle"
+#include <QJsonObject>
+
 /*!
  * @brief repolish用来刷新qss
  */

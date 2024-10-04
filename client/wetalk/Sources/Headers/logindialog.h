@@ -23,7 +23,7 @@ Q_OBJECT
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
 
-    ~LoginDialog() override;
+    ~LoginDialog();
 
 private:
     Ui::LoginDialog *ui;

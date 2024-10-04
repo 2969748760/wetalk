@@ -25,6 +25,7 @@ void CServer::Start() {
             }
             // 创建新连接，并且创建HttpConnection类管理这个连接
             std::make_shared<HttpConnection>(std::move(self->_socket))->Start();
+            self->Start();
         } catch (std::exception &exp) {
             std::cout << "exception is " << exp.what() << std::endl;
             self->Start();

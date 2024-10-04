@@ -47,8 +47,11 @@ void RegisterDialog::on_get_code_clicked() {
     bool match = regex.match(email).hasMatch();
     if (match) {
         // 发送验证码
-        showTip(tr("验证码已发送"), true);
-        qDebug("匹配成功");
+        std::cout << "match successfully" << std::endl;
+        QJsonObject json_obj;
+        json_obj["email"] = email;
+        HttpManager::GetInstance()->PostHttpReq(QUrl("http://localhost:8080/get_varifycode"), json_obj,
+                                                ReqId::ID_GET_VERIFY_CODE, Modules::REGISTERMOD);
     } else {
         showTip(tr("邮箱格式错误"), false);
         qDebug("匹配失败");
@@ -67,7 +70,7 @@ void RegisterDialog::slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err) 
         return;
     }
     // json解析错误
-    if (jsonDoc.isObject()) {
+    if (!jsonDoc.isObject()) {
         showTip(tr("json解析错误"), false);
         return;
     }

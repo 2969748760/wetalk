@@ -1,8 +1,9 @@
-D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdialog.cpp: D:/QtProjects/wetalk/Sources/Headers/registerdialog.h \
-  D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
+D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdialog.cpp: D:/QtProjects/wetalk/client/wetalk/Sources/Headers/registerdialog.h \
+  D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QByteArray \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QFlags \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QIODevice \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QJsonObject \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QList \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QMetaType \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
@@ -31,6 +32,8 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qbytearraylist.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qbytearrayview.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcalendar.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qcborcommon.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qcborvalue.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qchar.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcompare.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qcompare_impl.h \
@@ -63,6 +66,8 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiodevicebase.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiterable.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qiterator.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qjsonobject.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qjsonvalue.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qlatin1stringview.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qline.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qlist.h \
@@ -134,6 +139,7 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtypes.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qurl.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qutf8stringview.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/quuid.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvariant.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qvarlengtharray.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qversiontagging.h \
@@ -444,4 +450,4 @@ D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdia
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/vadefs.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wchar.h \
   D:/Qt/Tools/mingw1310_64/x86_64-w64-mingw32/include/wctype.h \
-  D:/QtProjects/wetalk/Sources/Headers/global.h
+  D:/QtProjects/wetalk/client/wetalk/Sources/Headers/global.h

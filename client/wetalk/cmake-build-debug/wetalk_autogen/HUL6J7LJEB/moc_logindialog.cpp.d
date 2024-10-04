@@ -1,5 +1,5 @@
-D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_logindialog.cpp: D:/QtProjects/wetalk/Sources/Headers/logindialog.h \
-  D:/QtProjects/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
+D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_logindialog.cpp: D:/QtProjects/wetalk/client/wetalk/Sources/Headers/logindialog.h \
+  D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20functional.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20iterator.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/q20memory.h \

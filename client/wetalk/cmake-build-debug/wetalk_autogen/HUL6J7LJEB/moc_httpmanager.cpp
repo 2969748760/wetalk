@@ -72,7 +72,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSHttpManagerENDCLASS[] = {
       10,    3,   41,    2, 0x06,    6 /* Public */,
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-      11,    4,   48,    2, 0x08,   10 /* Private */,
+      11,    4,   48,    2, 0x0a,   10 /* Public */,
 
  // signals: parameters
     QMetaType::Void, 0x80000000 | 3, QMetaType::QString, 0x80000000 | 6, 0x80000000 | 8,    4,    5,    7,    9,

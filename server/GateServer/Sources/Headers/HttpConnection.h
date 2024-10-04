@@ -13,12 +13,14 @@
 #include "const.h"
 
 class HttpConnection : public std::enable_shared_from_this<HttpConnection> {
-public:
     friend class LogicSystem;
 
+public:
     HttpConnection(tcp::socket socket);
 
     void Start();
+
+    void PreParseGetParam();
 
 private:
     void CheckDeadline();
@@ -34,6 +36,8 @@ private:
     net::steady_timer deadline_{
             _socket.get_executor(), std::chrono::seconds(60)
     };
+    std::string _get_url;
+    std::unordered_map<std::string, std::string> _get_params;
 };
 
 
