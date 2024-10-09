@@ -1,3 +1,3 @@
 # ninja log v6
-2	85	7501899791362854	grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-mkdir	6f57be148fb50f3
-2	85	7501899791362854	D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-mkdir	6f57be148fb50f3
+1	75	7501990538810572	grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-mkdir	6f57be148fb50f3
+1	75	7501990538810572	D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-mkdir	6f57be148fb50f3
