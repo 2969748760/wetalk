@@ -1,6 +1,7 @@
 D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/moc_registerdialog.cpp: D:/QtProjects/wetalk/client/wetalk/Sources/Headers/registerdialog.h \
   D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/moc_predefs.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QByteArray \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QDir \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QFlags \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QIODevice \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QJsonObject \
@@ -8,6 +9,7 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/6.8.0/mingw_64/include/QtCore/QMetaType \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QObject \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QRegularExpression \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/QSettings \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QSharedDataPointer \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QString \
   D:/Qt/6.8.0/mingw_64/include/QtCore/QUrl \
@@ -50,8 +52,13 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdatastream.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdatetime.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qdebug.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qdir.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qdirlisting.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qendian.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qexceptionhandling.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qfile.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qfiledevice.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qfileinfo.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qflags.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qfloat16.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qforeach.h \
@@ -97,6 +104,7 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/6.8.0/mingw_64/include/QtCore/qscopedpointer.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qscopeguard.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qset.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qsettings.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qshareddata.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qshareddata_impl.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qsharedpointer.h \
@@ -127,6 +135,7 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtdeprecationmarkers.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtenvironmentvariables.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtextstream.h \
+  D:/Qt/6.8.0/mingw_64/include/QtCore/qtimezone.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtmetamacros.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtnoop.h \
   D:/Qt/6.8.0/mingw_64/include/QtCore/qtpreprocessorsupport.h \
@@ -233,6 +242,10 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_defines.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/exception_ptr.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_dir.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_fwd.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_ops.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/fs_path.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functexcept.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/functional_hash.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/bits/hash_bytes.h \
@@ -323,6 +336,7 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/climits \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/clocale \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cmath \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/codecvt \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/compare \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/concepts \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/cstddef \
@@ -343,6 +357,7 @@ D:/QtProjects/wetalk/client/wetalk/cmake-build-debug/wetalk_autogen/HUL6J7LJEB/m
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/numeric_traits.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/string_conversions.h \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/ext/type_traits.h \
+  D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/filesystem \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/format \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/functional \
   D:/Qt/Tools/mingw1310_64/lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/initializer_list \

@@ -45,6 +45,25 @@ target_link_libraries(wetalk
 )
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/bin)
+get_filename_component(PWD ${CMAKE_SOURCE_DIR} ABSOLUTE)
+get_filename_component(OUTPUT_DIR ${CMAKE_RUNTIME_OUTPUT_DIRECTORY} ABSOLUTE)
+set(CONFIG_FILE ${PWD}/config.ini)
+
+if (WIN32)
+    add_custom_command(TARGET wetalk POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CONFIG_FILE}
+            ${OUTPUT_DIR}/config.ini
+    )
+
+    add_custom_command(TARGET wetalk POST_BUILD
+            COMMAND ${CMAKE_COMMAND} -E copy
+            ${CONFIG_FILE}
+            ${CMAKE_BINARY_DIR}/config.ini
+    )
+endif ()
+
+install(FILES ${CONFIG_FILE} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)

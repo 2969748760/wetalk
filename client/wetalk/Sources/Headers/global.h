@@ -20,6 +20,8 @@
 #include <QNetworkReply>
 #include "QStyle"
 #include <QJsonObject>
+#include <QDir>
+#include <QSettings>
 
 /*!
  * @brief repolish用来刷新qss
@@ -40,5 +42,7 @@ enum ErrorCodes {
     ERROR_JSON = 1, // json解析失败
     ERROR_NETWORK = 2, // 网络错误
 };
+
+extern QString gate_url_prefix;
 
 #endif //WETALK_GLOBAL_H

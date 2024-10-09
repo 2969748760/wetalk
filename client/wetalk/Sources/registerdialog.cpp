@@ -50,7 +50,7 @@ void RegisterDialog::on_get_code_clicked() {
         std::cout << "match successfully" << std::endl;
         QJsonObject json_obj;
         json_obj["email"] = email;
-        HttpManager::GetInstance()->PostHttpReq(QUrl("http://localhost:8080/get_varifycode"), json_obj,
+        HttpManager::GetInstance()->PostHttpReq(QUrl(gate_url_prefix+"/get_varifycode"), json_obj,
                                                 ReqId::ID_GET_VERIFY_CODE, Modules::REGISTERMOD);
     } else {
         showTip(tr("邮箱格式错误"), false);

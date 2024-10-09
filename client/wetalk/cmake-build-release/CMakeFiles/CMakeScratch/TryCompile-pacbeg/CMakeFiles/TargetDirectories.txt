@@ -1,0 +1,3 @@
+D:/QtProjects/wetalk/client/wetalk/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-pacbeg/CMakeFiles/cmTC_2ed69.dir
+D:/QtProjects/wetalk/client/wetalk/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-pacbeg/CMakeFiles/edit_cache.dir
+D:/QtProjects/wetalk/client/wetalk/cmake-build-release/CMakeFiles/CMakeScratch/TryCompile-pacbeg/CMakeFiles/rebuild_cache.dir

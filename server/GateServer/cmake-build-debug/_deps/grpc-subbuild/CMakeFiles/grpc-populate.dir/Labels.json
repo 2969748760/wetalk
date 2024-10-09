@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/CMakeFiles/grpc-populate"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/CMakeFiles/grpc-populate.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/CMakeFiles/grpc-populate-complete.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-build.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-configure.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-download.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-install.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-mkdir.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-patch.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-test.rule"
+		},
+		{
+			"file" : "D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/_deps/grpc-subbuild/grpc-populate-prefix/src/grpc-populate-stamp/grpc-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"grpc-populate"
+		],
+		"name" : "grpc-populate"
+	}
+}

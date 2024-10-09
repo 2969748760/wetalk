@@ -6,7 +6,8 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-e6ca40631941ea6b16d3.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.16"
@@ -43,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "wetalk::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wetalk-Debug-aae4cc2ead3efdbc3eea.json",
+					"jsonFile" : "target-wetalk-Debug-0eb3ab03dfbb8a737d9b.json",
 					"name" : "wetalk",
 					"projectIndex" : 0
 				},
