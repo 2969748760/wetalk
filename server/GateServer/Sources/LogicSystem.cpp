@@ -9,6 +9,7 @@
 
 #include "Headers/LogicSystem.h"
 #include "Headers/HttpConnection.h"
+#include "Headers/VerityGrpcClient.h"
 
 void LogicSystem::ReGet(std::string url, HttpHandler handler) {
     _get_handlers.insert(make_pair(url, handler));
@@ -53,8 +54,9 @@ LogicSystem::LogicSystem() {
         }
 
         auto email = src_root["email"].asString();
+        GetVerifyRsp response = VerifyGrpcClient::GetInstance()->GetVerifyCode(email);
         std::cout << "email is " << email << std::endl;
-        root["error"] = ErrorCodes::Success;
+        root["error"] = response.error();
         root["email"] = src_root["email"];
         std::string jsonstr = root.toStyledString();
         beast::ostream(connection->_response.body()) << jsonstr;

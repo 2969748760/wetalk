@@ -5,10 +5,15 @@
 #include <json/json.h>
 #include <json/value.h>
 #include <json/reader.h>
+
+#include "Headers/ConfigManager.h"
 #include "Headers/const.h"
 #include "Headers/CServer.h"
 
 int main() {
+    ConfigManager g_config_manager;
+    std::string gate_port_str = g_config_manager["GateServer"]["port"];
+    unsigned short gate_port = atoi(gate_port_str.c_str());
     try {
         unsigned short port = static_cast<unsigned short>(8080);
         net::io_context ioc{1};

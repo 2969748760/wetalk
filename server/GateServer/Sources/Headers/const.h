@@ -22,6 +22,9 @@
 #include <json/json.h>
 #include <json/value.h>
 #include <json/reader.h>
+#include <boost/filesystem.hpp>
+#include <boost/property_tree/ptree.hpp>
+#include <boost/property_tree/ini_parser.hpp>
 
 namespace beast = boost::beast;
 namespace http = beast::http;
@@ -33,4 +36,7 @@ enum ErrorCodes {
     Error_Json = 1001,
     RPCFailed = 1002,
 };
+
+class ConfigManager;
+extern ConfigManager g_config_manager;
 #endif //GATESERVER_CONST_H
