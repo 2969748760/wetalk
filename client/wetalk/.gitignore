@@ -1,0 +1,6 @@
+# Ignore .idea directories and *.iml files in the root and all subdirectories
+.idea/
+*.iml
+
+# Ignore cmake-build directories in the root and all subdirectories
+cmake-build-*/
