@@ -1,3 +1,0 @@
-D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/CMakeFiles/GateServer.dir
-D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/QtProjects/wetalk/server/GateServer/cmake-build-debug/CMakeFiles/rebuild_cache.dir

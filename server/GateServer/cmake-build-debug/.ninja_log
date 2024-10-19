@@ -1,8 +1,0 @@
-# ninja log v6
-15	8645	7502722697855778	CMakeFiles/GateServer.dir/Sources/main.cpp.obj	d0464c057f627988
-28	8531	7502722697993038	CMakeFiles/GateServer.dir/Sources/LogicSystem.cpp.obj	e98375ee1348f78c
-33	8588	7502723566046373	GateServer.exe	74e2c4d21ddf9e61
-4	248	7502727558303235	build.ninja	fff6148e2e901245
-20	9053	7502722697911060	CMakeFiles/GateServer.dir/Sources/CServer.cpp.obj	c68c6667e7f0b721
-24	12832	7502722697950952	CMakeFiles/GateServer.dir/Sources/HttpConnection.cpp.obj	e2a6111d7ea971a9
-15	8631	7502727574520745	GateServer.exe	7265968ce14af0f7
