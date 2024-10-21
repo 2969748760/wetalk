@@ -8,24 +8,24 @@
  */
 
 #include <QApplication>
-#include <QFile>
-#include "mainwindow.h"
+#include "Headers/mainwindow.h"
 #include "Headers/global.h"
+#include <QString>
 
 int main(int argc, char *argv[]) {
     QApplication a(argc, argv);
     QFile qss(":/style/stylesheet.qss");
     if (qss.open(QFile::ReadOnly)) {
         qDebug("open success");
-        QString style = QLatin1String(qss.readAll());
+        QString style = QString::fromUtf8(QLatin1String(qss.readAll()));
         a.setStyleSheet(style);
         qss.close();
     } else {
         qDebug("open failed");
     }
 
-    QString fileName = "config.ini";
     QString app_path = QCoreApplication::applicationDirPath();
+    QString fileName = "config.ini";
     QString config_path = QDir::toNativeSeparators(app_path + QDir::separator() + fileName);
     QSettings settings(config_path, QSettings::IniFormat);
     std::cout << "config_path is " << config_path.toStdString() << std::endl;

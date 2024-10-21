@@ -12,7 +12,6 @@
 #include "Headers/logindialog.h"
 #include "Forms/ui_LoginDialog.h"
 
-
 LoginDialog::LoginDialog(QWidget *parent) :
         QDialog(parent), ui(new Ui::LoginDialog) {
     ui->setupUi(this);

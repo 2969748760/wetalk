@@ -6,7 +6,7 @@
   * @Date           : 2024/09/27
   ******************************************************************************
  */
-#include "global.h"
+#include "Headers/global.h"
 
 std::function<void(QWidget *)> repolish = [](QWidget *widget) {
     widget->style()->unpolish(widget);

@@ -16,7 +16,6 @@ find_package(Qt6 COMPONENTS
         REQUIRED)
 
 include_directories(
-        ${PROJECT_SOURCE_DIR}/include
         ${PROJECT_SOURCE_DIR}/Sources/Headers
 )
 
@@ -37,7 +36,7 @@ add_executable(wetalk Sources/main.cpp
         Sources/httpmanager.cpp
         Sources/Headers/httpmanager.h
 )
-target_link_libraries(wetalk
+target_link_libraries(wetalk PRIVATE
         Qt::Core
         Qt::Gui
         Qt::Widgets
@@ -63,7 +62,7 @@ if (WIN32)
     )
 endif ()
 
-install(FILES ${CONFIG_FILE} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+# install(FILES ${CONFIG_FILE} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)

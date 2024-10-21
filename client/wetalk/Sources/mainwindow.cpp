@@ -23,10 +23,9 @@ MainWindow::MainWindow(QWidget *parent) :
     // 创建和注册消息链接
     connect(loginDialog, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
     registerDialog = new RegisterDialog(this);
-
+    registerDialog->hide();
     loginDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
     registerDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
-    registerDialog->hide();
 }
 
 MainWindow::~MainWindow() {
