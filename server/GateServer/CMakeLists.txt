@@ -50,6 +50,9 @@ target_link_libraries(GateServer PRIVATE gRPC::gpr gRPC::grpc gRPC::grpc++ gRPC:
 find_package(jsoncpp CONFIG REQUIRED)
 target_link_libraries(GateServer PRIVATE JsonCpp::JsonCpp)
 
+find_package(redis++ CONFIG REQUIRED)
+target_link_libraries(GateServer PRIVATE redis++::redis++)
+
 # 设置编译选项
 if(MSVC)
     message("This is MSVC")
