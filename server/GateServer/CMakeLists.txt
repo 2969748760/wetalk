@@ -25,7 +25,12 @@ add_executable(GateServer Sources/main.cpp
         Sources/Headers/VerityGrpcClient.h
         Sources/ConfigManager.cpp
         Sources/Headers/ConfigManager.h
+        Sources/AsioIOServicePool.cpp
+        Sources/Headers/AsioIOServicePool.h
 )
+
+target_compile_definitions(GateServer PRIVATE _WIN32_WINNT=0x0A00)
+#target_compile_options(GateServer PRIVATE "/MDd")
 
 target_include_directories(GateServer PRIVATE
         ${PROJECT_SOURCE_DIR}/Sources/Headers
@@ -36,12 +41,21 @@ if (WIN32)
     target_link_libraries(GateServer PRIVATE ws2_32 mswsock)
 endif ()
 
-#set(Boost_DIR "D:/.vcpkg-clion/vcpkg/installed/x64-windows/share/boost")
 find_package(Boost CONFIG REQUIRED COMPONENTS system filesystem)
-target_link_libraries(GateServer PRIVATE Boost::boost Boost::filesystem Boost::system)
+target_link_libraries(GateServer PRIVATE Boost::boost Boost::system Boost::filesystem)
 
 find_package(gRPC CONFIG REQUIRED)
 target_link_libraries(GateServer PRIVATE gRPC::gpr gRPC::grpc gRPC::grpc++ gRPC::grpc++_alts)
 
 find_package(jsoncpp CONFIG REQUIRED)
 target_link_libraries(GateServer PRIVATE JsonCpp::JsonCpp)
+
+# 设置编译选项
+if(MSVC)
+    message("This is MSVC")
+    # 为MSVC设置调试和发布配置的运行时库
+    foreach(build_type IN ITEMS RELEASE RELWITHDEBINFO MINSIZEREL DEBUG)
+        string(TOUPPER ${build_type} upper_build_type)
+        set(CMAKE_CXX_FLAGS_${upper_build_type} "${CMAKE_CXX_FLAGS_${upper_build_type}} /MDd")
+    endforeach()
+endif()

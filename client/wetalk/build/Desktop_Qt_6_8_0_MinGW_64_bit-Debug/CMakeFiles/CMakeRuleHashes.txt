@@ -1,4 +1,0 @@
-# Hashes of file build rules.
-f814ba5a7833a5dd7b85e98303f2c2f0 CMakeFiles/wetalk_autogen
-d67c32da1b30ac80eb6f6327d1db8b14 wetalk_autogen/EWIEGA46WW/qrc_resources.cpp
-023114d5e1364ccb8830dfc5facd0e2d wetalk_autogen/timestamp

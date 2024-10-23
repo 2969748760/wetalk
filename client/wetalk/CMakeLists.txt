@@ -1,12 +1,16 @@
 cmake_minimum_required(VERSION 3.29)
-project(wetalk)
 
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_CXX_EXTENSIONS OFF)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 set(CMAKE_AUTOUIC ON)
+set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/msvc2022_64")
 
-set(CMAKE_PREFIX_PATH "D:/Qt/6.8.0/mingw_64")
+add_compile_options("/Zc:__cplusplus")
+
+project(wetalk)
 
 find_package(Qt6 COMPONENTS
         Core
@@ -63,6 +67,15 @@ if (WIN32)
 endif ()
 
 # install(FILES ${CONFIG_FILE} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY})
+
+if(MSVC)
+    message("This is MSVC")
+    # 为MSVC设置调试和发布配置的运行时库
+    foreach(build_type IN ITEMS RELEASE RELWITHDEBINFO MINSIZEREL DEBUG)
+        string(TOUPPER ${build_type} upper_build_type)
+        set(CMAKE_CXX_FLAGS_${upper_build_type} "${CMAKE_CXX_FLAGS_${upper_build_type}} /MDd")
+    endforeach()
+endif()
 
 if (WIN32 AND NOT DEFINED CMAKE_TOOLCHAIN_FILE)
     set(DEBUG_SUFFIX)

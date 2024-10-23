@@ -11,7 +11,7 @@
 #include "Headers/CServer.h"
 
 int main() {
-    ConfigManager g_config_manager;
+    auto& g_config_manager = ConfigManager::GetInstance();
     std::string gate_port_str = g_config_manager["GateServer"]["port"];
     unsigned short gate_port = atoi(gate_port_str.c_str());
     try {

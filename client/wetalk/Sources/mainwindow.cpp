@@ -12,7 +12,6 @@
 #include "Headers/mainwindow.h"
 #include "Forms/ui_MainWindow.h"
 
-
 MainWindow::MainWindow(QWidget *parent) :
         QMainWindow(parent), ui(new Ui::MainWindow) {
     setWindowIcon(QIcon(":/resources/icons/icon_small.ico"));

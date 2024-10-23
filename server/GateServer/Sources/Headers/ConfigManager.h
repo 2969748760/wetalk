@@ -47,8 +47,6 @@ public:
         return _config_map[section];
     }
 
-    ConfigManager();
-
     ConfigManager(const ConfigManager &src) {
         this->_config_map = src._config_map;
     }
@@ -61,8 +59,15 @@ public:
         return *this;
     }
 
+    static ConfigManager &GetInstance() {
+        static ConfigManager instance;
+        return instance;
+    }
+
 private:
     std::map<std::string, SectionInfo> _config_map;
+
+    ConfigManager();
 };
 
 
