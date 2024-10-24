@@ -1,8 +1,11 @@
-cmake_minimum_required(VERSION 3.29)
+﻿cmake_minimum_required(VERSION 3.29)
 project(GateServer)
 
 set(CMAKE_CXX_STANDARD 20)
 set(Boost_VERBOSE ON)
+
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/source-charset:utf-8>")
+add_compile_options("$<$<CXX_COMPILER_ID:MSVC>:/execution-charset:utf-8>")
 
 # 设置代理
 #set(ENV{http_proxy} "http://127.0.0.1:7890")
@@ -27,6 +30,8 @@ add_executable(GateServer Sources/main.cpp
         Sources/Headers/ConfigManager.h
         Sources/AsioIOServicePool.cpp
         Sources/Headers/AsioIOServicePool.h
+        Sources/RedisManager.cpp
+        Sources/Headers/RedisManager.h
 )
 
 target_compile_definitions(GateServer PRIVATE _WIN32_WINNT=0x0A00)
