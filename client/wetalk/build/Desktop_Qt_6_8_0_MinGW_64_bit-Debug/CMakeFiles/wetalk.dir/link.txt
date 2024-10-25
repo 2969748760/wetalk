@@ -1,0 +1,3 @@
+D:\CMake\bin\cmake.exe -E rm -f CMakeFiles\wetalk.dir/objects.a
+D:\Qt\Tools\mingw1310_64\bin\ar.exe qc CMakeFiles\wetalk.dir/objects.a @CMakeFiles\wetalk.dir\objects1.rsp
+D:\Qt\Tools\mingw1310_64\bin\g++.exe -DQT_QML_DEBUG -g -Wl,--whole-archive CMakeFiles\wetalk.dir/objects.a -Wl,--no-whole-archive -o wetalk.exe -Wl,--out-implib,libwetalk.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\wetalk.dir\linkLibs.rsp

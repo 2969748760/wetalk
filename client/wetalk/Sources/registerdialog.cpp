@@ -1,4 +1,4 @@
-/**
+﻿/**
   ******************************************************************************
   * @File           : registerdialog.cpp
   * @Author         : 钟先生
@@ -15,8 +15,7 @@
 #include "Headers/global.h"
 #include "Headers/httpmanager.h"
 
-RegisterDialog::RegisterDialog(QWidget *parent) :
-        QDialog(parent), ui(new Ui::RegisterDialog) {
+RegisterDialog::RegisterDialog(QWidget *parent) : QDialog(parent), ui(new Ui::RegisterDialog) {
     ui->setupUi(this);
     ui->pass_edit->setEchoMode(QLineEdit::Password);
     ui->confirmpass_edit->setEchoMode(QLineEdit::Password);
@@ -50,7 +49,7 @@ void RegisterDialog::on_get_code_clicked() {
         std::cout << "match successfully" << std::endl;
         QJsonObject json_obj;
         json_obj["email"] = email;
-        HttpManager::GetInstance()->PostHttpReq(QUrl(gate_url_prefix+"/get_varifycode"), json_obj,
+        HttpManager::GetInstance()->PostHttpReq(QUrl(gate_url_prefix + "/get_verifycode"), json_obj,
                                                 ReqId::ID_GET_VERIFY_CODE, Modules::REGISTERMOD);
     } else {
         showTip(tr("邮箱格式错误"), false);
@@ -91,4 +90,51 @@ void RegisterDialog::initHttpHandlers() {
         showTip(tr("验证码已发送至邮箱: ") + email, true);
         qDebug() << "email is " << email;
     });
+
+    _handlers.insert(ReqId::ID_REG_USER, [this](QJsonObject jsonObject) {
+        int error = jsonObject["error"].toInt();
+        if (error != ErrorCodes::SUCCESS) {
+            showTip(tr("参数错误"), false);
+            return;
+        }
+        auto email = jsonObject["email"].toString();
+        showTip(tr("用户注册成功 "), true);
+        qDebug() << "email is " << email;
+    });
+}
+
+void RegisterDialog::on_sure_btn_clicked() {
+    if (ui->user_edit->text() == "") {
+        showTip(tr("用户名不能为空"), false);
+        return;
+    }
+    if (ui->email_edit->text() == "") {
+        showTip(tr("邮箱不能为空"), false);
+        return;
+    }
+    if (ui->pass_edit->text() == "") {
+        showTip(tr("密码不能为空"), false);
+        return;
+    }
+    if (ui->confirmpass_edit->text() == "") {
+        showTip(tr("确认密码不能为空"), false);
+        return;
+    }
+    if (ui->pass_edit->text() != ui->confirmpass_edit->text()) {
+        showTip(tr("两次密码不一致"), false);
+        return;
+    }
+    if (ui->verify_edit->text() == "") {
+        showTip(tr("验证码不能为空"), false);
+        return;
+    }
+
+    QJsonObject json_obj;
+    json_obj["user"] = ui->user_edit->text();
+    json_obj["email"] = ui->email_edit->text();
+    json_obj["passwd"] = ui->pass_edit->text();
+    json_obj["confirm"] = ui->confirmpass_edit->text();
+    json_obj["verify_code"] = ui->verify_edit->text();
+    HttpManager::GetInstance()->PostHttpReq(QUrl(gate_url_prefix + "/user_register"),
+                                            json_obj, ReqId::ID_REG_USER, Modules::REGISTERMOD);
 }

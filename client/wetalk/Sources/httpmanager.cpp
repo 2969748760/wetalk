@@ -10,7 +10,6 @@
 #include "Headers/httpmanager.h"
 
 HttpManager::~HttpManager() {
-
 }
 
 HttpManager::HttpManager() {

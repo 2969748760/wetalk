@@ -28,9 +28,9 @@ public:
 
     bool HandleGet(std::string, std::shared_ptr<HttpConnection>);
 
-    void ReGet(std::string, HttpHandler handler);
+    void RegGet(std::string, HttpHandler handler);
 
-    void RePost(std::string, HttpHandler handler);
+    void RegPost(std::string, HttpHandler handler);
 
     bool HandlePost(std::string, std::shared_ptr<HttpConnection>);
 

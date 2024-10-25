@@ -28,12 +28,14 @@ public:
 private:
     void showTip(QString str, bool b_ok);
     void initHttpHandlers();
-    QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
+
+QMap<ReqId, std::function<void(const QJsonObject&)>> _handlers;
     Ui::RegisterDialog *ui;
 
 private slots:
     void slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err);
     void on_get_code_clicked();
+    void on_sure_btn_clicked();
 };
 
 
