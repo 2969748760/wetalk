@@ -30,6 +30,7 @@
 #include <atomic>
 #include <hiredis/hiredis.h>
 #include <cassert>
+#include <memory>
 
 #define CODEPREFIX "code_"
 

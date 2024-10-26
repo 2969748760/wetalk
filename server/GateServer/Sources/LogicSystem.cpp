@@ -11,6 +11,7 @@
 #include "Headers/HttpConnection.h"
 #include "Headers/VerityGrpcClient.h"
 #include "Headers/RedisManager.h"
+#include "Headers/MysqlManager.h"
 
 void LogicSystem::RegGet(std::string url, HttpHandler handler) {
     _get_handlers.insert(make_pair(url, handler));
@@ -82,7 +83,7 @@ LogicSystem::LogicSystem() {
         }
 
         auto email = src_root["email"].asString();
-        auto user = src_root["user"].asString();
+        auto name = src_root["user"].asString();
         auto passwd = src_root["passwd"].asString();
         auto confirm = src_root["confirm"].asString();
 
@@ -113,10 +114,20 @@ LogicSystem::LogicSystem() {
             return true;
         }
 
+        int uid = MysqlManager::GetInstance()->RegUser(name, email, passwd);
+        if (uid == 0 || uid == -1) {
+            std::cout << " user or email already exist" << std::endl;
+            root["error"] = ErrorCodes::UserExist;
+            std::string jsonstr = root.toStyledString();
+            beast::ostream(connection->_response.body()) << jsonstr;
+            return true;
+        }
+
         //查找数据库判断用户是否存在
         root["error"] = 0;
         root["email"] = email;
-        root["user"] = user;
+        root["uid"] = uid;
+        root["user"] = name;
         root["passwd"] = passwd;
         root["confirm"] = confirm;
         root["verify_code"] = verify_code;
