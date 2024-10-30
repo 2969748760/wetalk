@@ -12,7 +12,9 @@ async function GetVerifyCode(call, callback) {
         console.log("query_res is ", query_res)
         let uniqueId = query_res;
         if(query_res === null){
-            uniqueId = uuidv4();
+            // uniqueId = uuidv4();
+            uniqueId = Math.floor(100000 + Math.random()*900000).toString();
+            console.log("uniqueId is ", uniqueId);
             if(uniqueId.length > 6) {
                 uniqueId = uniqueId.substring(0, 6);
             }

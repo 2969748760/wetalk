@@ -39,6 +39,10 @@ add_executable(wetalk Sources/main.cpp
         Sources/Headers/singleton.h
         Sources/httpmanager.cpp
         Sources/Headers/httpmanager.h
+        Sources/TimerBtn.cpp
+        Sources/Headers/TimerBtn.h
+        Sources/ClickedLabel.cpp
+        Sources/Headers/ClickedLabel.h
 )
 target_link_libraries(wetalk PRIVATE
         Qt::Core

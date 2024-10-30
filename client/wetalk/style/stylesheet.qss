@@ -13,3 +13,35 @@ QDialog#LoginDialog, #RegisterDialog {
 #error_tip[state='error'] {
     color: red;
 }
+
+#pass_visible[state='invisible']{
+   border-image: url(:/resources/images/invisible.png);
+}
+
+#pass_visible[state='invisible_hover']{
+   border-image: url(:/resources/images/invisible_hover.png);
+}
+
+#pass_visible[state='visible']{
+   border-image: url(:/resources/images/visible.png);
+}
+
+#pass_visible[state='visible_hover']{
+   border-image: url(:/resources/images/visible_hover.png);
+}
+
+#confirm_visible[state='invisible']{
+   border-image: url(:/resources/images/invisible.png);
+}
+
+#confirm_visible[state='invisible_hover']{
+   border-image: url(:/resources/images/invisible_hover.png);
+}
+
+#confirm_visible[state='visible']{
+   border-image: url(:/resources/images/visible.png);
+}
+
+#confirm_visible[state='visible_hover']{
+   border-image: url(:/resources/images/visible_hover.png);
+}

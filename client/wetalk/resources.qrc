@@ -3,5 +3,21 @@
         <file>resources/icons/icon_small.ico</file>
         <file>resources/images/ma.png</file>
         <file>style/stylesheet.qss</file>
+        <file>resources/images/add_friend_hover.png</file>
+        <file>resources/images/add_friend_normal.png</file>
+        <file>resources/images/close_search.png</file>
+        <file>resources/images/close_transparent.png</file>
+        <file>resources/images/head1.png</file>
+        <file>resources/images/head2.png</file>
+        <file>resources/images/head3.png</file>
+        <file>resources/images/head4.png</file>
+        <file>resources/images/head5.png</file>
+        <file>resources/images/head6.png</file>
+        <file>resources/images/loading.gif</file>
+        <file>resources/images/search.png</file>
+        <file>resources/images/invisible.png</file>
+        <file>resources/images/invisible_hover.png</file>
+        <file>resources/images/visible.png</file>
+        <file>resources/images/visible_hover.png</file>
     </qresource>
 </RCC>
