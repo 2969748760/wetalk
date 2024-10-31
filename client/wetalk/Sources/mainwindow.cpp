@@ -10,6 +10,8 @@
 // You may need to build the project (run Qt uic code generator) to get "ui_MainWindow.h" resolved
 
 #include "Headers/mainwindow.h"
+
+#include "Headers/resetdialog.h"
 #include "Forms/ui_MainWindow.h"
 
 MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWindow) {
@@ -21,6 +23,7 @@ MainWindow::MainWindow(QWidget *parent) : QMainWindow(parent), ui(new Ui::MainWi
     // loginDialog->show();
     // 创建和注册消息链接
     connect(loginDialog, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
+    connect(loginDialog, &LoginDialog::switchResetPwd, this, &MainWindow::SlotSwitchReset);
 }
 
 MainWindow::~MainWindow() {
@@ -46,5 +49,29 @@ void MainWindow::SlotSwitchLogin() {
     registerDialog->hide();
     loginDialog->show();
 
+    connect(loginDialog, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
+    connect(loginDialog, &LoginDialog::switchResetPwd, this, &MainWindow::SlotSwitchReset);
+}
+
+void MainWindow::SlotSwitchReset() {
+    resetDialog = new ResetDialog(this);
+    resetDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+    setCentralWidget(resetDialog);
+
+    loginDialog->hide();
+    resetDialog->show();
+
+    connect(resetDialog, &ResetDialog::sigSwitchLogin, this, &MainWindow::SlotSwitchLoginFromReset);
+}
+
+void MainWindow::SlotSwitchLoginFromReset() {
+    loginDialog = new LoginDialog(this);
+    loginDialog->setWindowFlags(Qt::CustomizeWindowHint | Qt::FramelessWindowHint);
+    setCentralWidget(loginDialog);
+
+    resetDialog->hide();
+    loginDialog->show();
+
+    connect(loginDialog, &LoginDialog::switchResetPwd, this, &MainWindow::SlotSwitchReset);
     connect(loginDialog, &LoginDialog::switchRegister, this, &MainWindow::SlotSwitchReg);
 }

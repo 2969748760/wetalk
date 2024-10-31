@@ -66,6 +66,8 @@ private slots:
 
     void on_return_btn_clicked();
 
+    void on_cancel_btn_clicked();
+
 signals:
     void sigSwitchLogin();
 };

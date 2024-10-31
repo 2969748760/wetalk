@@ -14,11 +14,15 @@
 
 
 QT_BEGIN_NAMESPACE
-namespace Ui { class LoginDialog; }
+
+namespace Ui {
+    class LoginDialog;
+}
+
 QT_END_NAMESPACE
 
 class LoginDialog : public QDialog {
-Q_OBJECT
+    Q_OBJECT
 
 public:
     explicit LoginDialog(QWidget *parent = nullptr);
@@ -28,8 +32,13 @@ public:
 private:
     Ui::LoginDialog *ui;
 
+private slots:
+    void slot_forget_pwd();
+
 signals:
     void switchRegister();
+
+    void switchResetPwd();
 };
 
 

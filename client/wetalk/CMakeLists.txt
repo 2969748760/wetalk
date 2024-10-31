@@ -43,6 +43,9 @@ add_executable(wetalk Sources/main.cpp
         Sources/Headers/TimerBtn.h
         Sources/ClickedLabel.cpp
         Sources/Headers/ClickedLabel.h
+        Sources/resetdialog.cpp
+        Sources/Headers/resetdialog.h
+        Sources/Forms/resetdialog.ui
 )
 target_link_libraries(wetalk PRIVATE
         Qt::Core
