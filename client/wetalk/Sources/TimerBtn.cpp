@@ -6,14 +6,14 @@
 #include <QMouseEvent>
 #include <QDebug>
 
-TimerBtn::TimerBtn(QWidget *parent) : QPushButton(parent), _counter(180) {
+TimerBtn::TimerBtn(QWidget *parent) : QPushButton(parent), _counter(10) {
     _timer = new QTimer(this);
 
     connect(_timer, &QTimer::timeout, [this]() {
         _counter--;
         if (_counter <= 0) {
             _timer->stop();
-            _counter = 180;
+            _counter = 10;
             this->setText("获取验证码");
             this->setEnabled(true);
             return;

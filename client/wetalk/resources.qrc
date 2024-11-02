@@ -19,5 +19,11 @@
         <file>resources/images/invisible_hover.png</file>
         <file>resources/images/visible.png</file>
         <file>resources/images/visible_hover.png</file>
+        <file>resources/images/fileDir.png</file>
+        <file>resources/images/fileDir_hover.png</file>
+        <file>resources/images/fileDir_press.png</file>
+        <file>resources/images/smile.png</file>
+        <file>resources/images/smile_hover.png</file>
+        <file>resources/images/smile_press.png</file>
     </qresource>
 </RCC>

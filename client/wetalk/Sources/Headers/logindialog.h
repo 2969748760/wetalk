@@ -12,6 +12,8 @@
 
 #include <QDialog>
 
+#include "global.h"
+
 
 QT_BEGIN_NAMESPACE
 
@@ -31,14 +33,40 @@ public:
 
 private:
     Ui::LoginDialog *ui;
+    QMap<TipError, QString> _tip_errors;
+    QMap<ReqId, std::function<void(const QJsonObject &)> > _handlers;
+    int _uid;
+    QString _token;
+
+    void initHead();
+
+    bool checkEmailValid();
+
+    bool checkPwdValid();
+
+    void AddTipError(TipError error, QString tips);
+
+    void DelTipError(TipError error);
+
+    void showTip(QString str, bool b_ok);
+
+    bool enableBtn(bool cond);
+
+    void initHttpHandlers();
 
 private slots:
     void slot_forget_pwd();
+
+    void on_login_btn_clicked();
+
+    void slot_login_mod_finish(ReqId id, QString res, ErrorCodes error);
 
 signals:
     void switchRegister();
 
     void switchResetPwd();
+
+    void sig_connect_tcp(ServerInfo);
 };
 
 

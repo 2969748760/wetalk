@@ -34,6 +34,11 @@
 #include <memory>
 
 #define CODEPREFIX "code_"
+#define USERIPPREFIX  "uip_"
+#define USERTOKENPREFIX  "utoken_"
+#define IPCOUNTPREFIX  "ipcount_"
+#define USER_BASE_INFO "ubaseinfo_"
+#define LOGIN_COUNT  "logincount"
 
 namespace beast = boost::beast;
 namespace http = beast::http;
@@ -51,6 +56,8 @@ enum ErrorCodes {
     EmailNotMatch = 1007, // 邮箱不匹配
     PasswordUpdateFailed = 1008, // 密码更新失败
     PasswordInvalid = 1009, // 密码不合法
+    TokenInvalid = 1010, // token失效
+    UidInvalid = 1011, // uid无效
 };
 
 class Defer {

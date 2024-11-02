@@ -44,6 +44,7 @@ enum ReqId {
 enum Modules {
     REGISTERMOD = 0,
     RESETMOD = 1,
+    LOGINMOD = 2,
 };
 
 enum ErrorCodes {
@@ -68,5 +69,12 @@ enum ClickLabelState {
 };
 
 extern QString gate_url_prefix;
+
+struct ServerInfo {
+    QString Host;
+    QString Port;
+    QString Token;
+    int Uid;
+};
 
 #endif //WETALK_GLOBAL_H

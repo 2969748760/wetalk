@@ -21,10 +21,10 @@ RegisterDialog::RegisterDialog(QWidget *parent) : QDialog(parent), ui(new Ui::Re
     ui->confirmpass_edit->setEchoMode(QLineEdit::Password);
     ui->error_tip->setProperty("state", "normal");
     repolish(ui->error_tip);
+    ui->error_tip->clear();
     connect(HttpManager::GetInstance().get(), &HttpManager::sig_reg_mod_finish, this,
             &RegisterDialog::slot_reg_mod_finish);
     initHttpHandlers();
-    ui->error_tip->clear();
 
     connect(ui->user_edit, &QLineEdit::editingFinished, this, [this]() {
         checkUserValid();
@@ -138,7 +138,6 @@ void RegisterDialog::slot_reg_mod_finish(ReqId id, QString res, ErrorCodes err) 
     }
 
     _handlers[id](jsonDoc.object());
-    return;
 }
 
 void RegisterDialog::initHttpHandlers() {

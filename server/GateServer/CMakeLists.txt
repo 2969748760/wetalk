@@ -36,6 +36,8 @@ add_executable(GateServer Sources/main.cpp
         Sources/Headers/MysqlDao.h
         Sources/MysqlManager.cpp
         Sources/Headers/MysqlManager.h
+        Sources/StatusGrpcClient.cpp
+        Sources/Headers/StatusGrpcClient.h
 )
 
 target_compile_definitions(GateServer PRIVATE _WIN32_WINNT=0x0A00)
