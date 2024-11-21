@@ -46,6 +46,8 @@ add_executable(wetalk Sources/main.cpp
         Sources/resetdialog.cpp
         Sources/Headers/resetdialog.h
         Sources/Forms/resetdialog.ui
+        Sources/Headers/TcpManager.h
+        Sources/TcpManager.cpp
 )
 target_link_libraries(wetalk PRIVATE
         Qt::Core

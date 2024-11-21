@@ -16,6 +16,7 @@
 #include <QPainter>
 #include <QPainterPath>
 
+#include "TcpManager.h"
 #include "Headers/httpmanager.h"
 
 LoginDialog::LoginDialog(QWidget *parent) : QDialog(parent), ui(new Ui::LoginDialog) {
@@ -31,6 +32,12 @@ LoginDialog::LoginDialog(QWidget *parent) : QDialog(parent), ui(new Ui::LoginDia
     initHttpHandlers();
     connect(HttpManager::GetInstance().get(), &HttpManager::sig_login_mod_finish, this,
             &LoginDialog::slot_login_mod_finish);
+    // 连接tcp连接请求的信号和槽函数
+    connect(this, &LoginDialog::sig_connect_tcp, TcpManager::GetInstance().get(), &TcpManager::slot_tcp_connect);
+    // 连接tcp连接成功的信号和槽函数
+    connect(TcpManager::GetInstance().get(), &TcpManager::sig_con_success, this, &LoginDialog::slot_tcp_con_finish);
+    // 连接tcp管理者发出的登陆失败信号和槽函数
+    connect(TcpManager::GetInstance().get(), &TcpManager::sig_login_failed, this, &LoginDialog::slot_login_failed);
 }
 
 LoginDialog::~LoginDialog() {
@@ -187,4 +194,27 @@ void LoginDialog::slot_login_mod_finish(ReqId id, QString res, ErrorCodes error)
     }
 
     _handlers[id](jsonDoc.object());
+}
+
+void LoginDialog::slot_tcp_con_finish(bool bsuccess) {
+    if (bsuccess) {
+        showTip(tr("聊天服务连接成功，正在登录..."), true);
+        QJsonObject jsonObj;
+        jsonObj["uid"] = _uid;
+        jsonObj["token"] = _token;
+
+        QJsonDocument doc(jsonObj);
+        QByteArray jsonData = doc.toJson(QJsonDocument::Indented);
+
+        emit TcpManager::GetInstance()->sig_send_data(ReqId::ID_CHAT_LOGIN, jsonData);
+    } else {
+        showTip(tr("网络异常"), false);
+        enableBtn(true);
+    }
+}
+
+void LoginDialog::slot_login_failed(int err) {
+    QString result = QString("登陆失败, 错误码: %1").arg(err);
+    showTip(result, false);
+    enableBtn(true);
 }
