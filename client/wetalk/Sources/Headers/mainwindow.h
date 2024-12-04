@@ -11,6 +11,8 @@
 #define WETALK_MAINWINDOW_H
 
 #include <QMainWindow>
+
+#include "chatdialog.h"
 #include "logindialog.h"
 #include "registerdialog.h"
 #include "resetdialog.h"
@@ -40,11 +42,14 @@ public slots:
 
     void SlotSwitchLoginFromReset();
 
+    void SlotSwitchChat();
+
 private:
     Ui::MainWindow *ui;
     LoginDialog *loginDialog;
     RegisterDialog *registerDialog;
     ResetDialog *resetDialog;
+    ChatDialog *chatDialog;
 };
 
 

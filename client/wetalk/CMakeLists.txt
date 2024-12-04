@@ -23,32 +23,12 @@ include_directories(
         ${PROJECT_SOURCE_DIR}/Sources/Headers
 )
 
-add_executable(wetalk Sources/main.cpp
-        Sources/mainwindow.cpp
-        Sources/Headers/mainwindow.h
-        Sources/Forms/mainwindow.ui
-        resources.qrc
-        Sources/logindialog.cpp
-        Sources/Headers/logindialog.h
-        Sources/Forms/logindialog.ui
-        Sources/registerdialog.cpp
-        Sources/Headers/registerdialog.h
-        Sources/Forms/registerdialog.ui
-        Sources/Headers/global.h
-        Sources/global.cpp
-        Sources/Headers/singleton.h
-        Sources/httpmanager.cpp
-        Sources/Headers/httpmanager.h
-        Sources/TimerBtn.cpp
-        Sources/Headers/TimerBtn.h
-        Sources/ClickedLabel.cpp
-        Sources/Headers/ClickedLabel.h
-        Sources/resetdialog.cpp
-        Sources/Headers/resetdialog.h
-        Sources/Forms/resetdialog.ui
-        Sources/Headers/TcpManager.h
-        Sources/TcpManager.cpp
-)
+file(GLOB CPP_FILES "Sources/*.cpp")
+file(GLOB H_FILES "Sources/Headers/*.h")
+file(GLOB UI_FILES "Sources/Forms/*.ui")
+
+add_executable(wetalk ${H_FILES} ${CPP_FILES} ${UI_FILES} resources.qrc)
+
 target_link_libraries(wetalk PRIVATE
         Qt::Core
         Qt::Gui

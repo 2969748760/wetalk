@@ -25,5 +25,17 @@
         <file>resources/images/smile.png</file>
         <file>resources/images/smile_hover.png</file>
         <file>resources/images/smile_press.png</file>
+        <file>resources/images/addtip.png</file>
+        <file>resources/images/arowdown.png</file>
+        <file>resources/images/chat_icon.png</file>
+        <file>resources/images/chat_icon_hover.png</file>
+        <file>resources/images/chat_icon_press.png</file>
+        <file>resources/images/chat_icon_select_hover.png</file>
+        <file>resources/images/chat_icon_select_press.png</file>
+        <file>resources/images/contact_list.png</file>
+        <file>resources/images/contact_list_hover.png</file>
+        <file>resources/images/contact_list_press.png</file>
+        <file>resources/images/right_tip.png</file>
+        <file>resources/images/tipclose.png</file>
     </qresource>
 </RCC>

@@ -47,7 +47,7 @@ StatusServiceImpl::StatusServiceImpl() {
 Status StatusServiceImpl::GetChatServer(ServerContext *context, const GetChatServerReq *request,
                                         GetChatServerRsp *response) {
     std::string prefix("wetalk status server has received: ");
-    const auto server = getChatServer();
+    const auto &server = getChatServer();
     response->set_host(server.host);
     response->set_port(server.port);
     response->set_error(ErrorCodes::Success);

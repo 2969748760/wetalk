@@ -7,6 +7,8 @@
 #include <iostream>
 #include <QJsonDocument>
 
+#include "UserMgr.h"
+
 TcpManager::~TcpManager() {
 }
 
@@ -93,6 +95,9 @@ void TcpManager::initHandlers() {
             return;
         }
 
+        UserMgr::GetInstance()->SetUid(jsonObj["uid"].toInt());
+        UserMgr::GetInstance()->SetName(jsonObj["name"].toString());
+        UserMgr::GetInstance()->SetToken(jsonObj["token"].toString());
         emit sig_switch_chatdlg();
     });
 }
