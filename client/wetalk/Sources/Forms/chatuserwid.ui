@@ -10,6 +10,12 @@
     <height>60</height>
    </rect>
   </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>60</height>
+   </size>
+  </property>
   <property name="maximumSize">
    <size>
     <width>16777215</width>
@@ -21,19 +27,19 @@
   </property>
   <layout class="QHBoxLayout" name="horizontalLayout">
    <property name="spacing">
-    <number>5</number>
+    <number>0</number>
    </property>
    <property name="leftMargin">
-    <number>6</number>
+    <number>10</number>
    </property>
    <property name="topMargin">
-    <number>2</number>
+    <number>0</number>
    </property>
    <property name="rightMargin">
-    <number>6</number>
+    <number>10</number>
    </property>
    <property name="bottomMargin">
-    <number>3</number>
+    <number>0</number>
    </property>
    <item>
     <widget class="QWidget" name="icon_wid" native="true">
@@ -69,18 +75,21 @@
        <widget class="QLabel" name="icon_lb">
         <property name="minimumSize">
          <size>
-          <width>45</width>
-          <height>45</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="maximumSize">
          <size>
-          <width>45</width>
-          <height>45</height>
+          <width>50</width>
+          <height>50</height>
          </size>
         </property>
         <property name="text">
          <string/>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
         </property>
        </widget>
       </item>
@@ -89,6 +98,12 @@
    </item>
    <item>
     <widget class="QWidget" name="user_info_wid" native="true">
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>16777215</height>
+      </size>
+     </property>
      <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
        <number>7</number>
@@ -107,6 +122,12 @@
       </property>
       <item>
        <widget class="QLabel" name="user_name_lb">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>xixiD_D</string>
         </property>
@@ -114,6 +135,12 @@
       </item>
       <item>
        <widget class="QLabel" name="user_chat_lb">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>Hello World!</string>
         </property>
@@ -137,6 +164,21 @@
       </size>
      </property>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
       <item>
        <widget class="QLabel" name="time_lb">
         <property name="text">

@@ -21,6 +21,8 @@ public:
 
     void mousePressEvent(QMouseEvent *event) override;
 
+    void mouseReleaseEvent(QMouseEvent *event) override;
+
     void SetState(QString normal = "", QString hover = "", QString press = "", QString select = "",
                   QString select_hover = "", QString select_press = "");
 
